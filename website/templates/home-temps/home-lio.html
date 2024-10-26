@@ -1,0 +1,98 @@
+<!DO  TYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folio | #1</title>
+    <link rel="stylesheet" href="{{url_for("static", filename="home-statics/css/base.css")}}" />
+    <link rel="stylesheet" href="{{url_for("static", filename="home-statics/css/color-01.css")}}">
+    <link rel="stylesheet" href="{{url_for("static", filename="home-statics/css/classList.css")}}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid bgBlack">
+      <!-- ===== The left side bar -->
+      <div class="sidebar bgBlack">
+        <span class="menu-icon active"><i class="fa-solid fa-bars larger"></i></span>
+        <span class="top-tag default"><p class="a active larger" style="font-weight: 600;" >Ripon</p></span>
+        <ul>
+          <li><i class="fa-solid fa-house active"></i><a href="">Home</a></li>
+          <li><i class="fa-solid fa-user active"></i><a href="">About</a></li>
+          <li><i class="fa-solid fa-bars active"></i><a href="">Services</a></li>
+          <li><i class="fa-solid fa-folder active"></i><a href="">Portfolio</a></li>
+          <li><i class="fa-solid fa-message active"></i><a href="">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- ===== END of The left side bar -->
+
+      <!-- ===== The Body styles -->
+
+      <div class="body">
+
+        <!-- The CONTENT styles, but not the profile-image styles !noTE -->
+        <div class="content-wrapper">
+          <h2>Hello, my name is <span class="text-red default active larger">Samuel Eripon</span></h2>
+          <h1>I'm the <span class="text-red default active larger">Best of the best</span></h1>
+          <div class= "text-wrapper">
+            <p>
+              I'm a Cyber Security expert with over 1 year of experience.<br />
+              My expertice is to create, analyse, test and add protective
+              <br />measures to my clients and more...
+            </p>
+          </div>
+
+          <div class="button-wrapper">
+            <button style="background-color: orangered; font-weight:600;" class="btn btn-success">More About Me</button>
+          </div>
+        </div>
+        <!-- END of The CONTENT styles, but not the profile-image styles !noTE -->
+
+
+        <!-- The PROFILE-IMAGE styles -->
+        <div class="image-wrapper">
+          <img
+            src="{{url_for("static", filename="home-statics/images/profile.jpg")}}"
+            alt="profile-picture"
+          />
+        </div>
+        <!-- END of The PROFILE-IMAGE styles -->
+
+
+        <!-- ===== The TOP-MENU styles containing the settings icons and light to dark icons  -->
+        <div class="top-menu-wrapper">
+          <span class="top-icons"><i class="fa-solid fa-gear" id="settings" title="themes"></i></span>
+          <span class="top-icons"
+            ><i class="fa-solid fa-sun" id="dark" title="dark"></i
+          ></span>
+
+          <!-- ==== The THEME COLORS styles -->
+          <div class="settings">
+            <span>Theme Colors</span><br />
+            <span class="theme-colors"
+              ><div class="cls cls-1"></div>
+              <div class="cls cls-2"></div>
+              <div class="cls cls-3"></div>
+              <div class="cls cls-4"></div>
+          </div>
+          <!-- ==== END of The THEME COLORS styles -->
+
+        </div>
+      </div>
+
+      <!-- ===== END of The Body styles -->
+
+    </div>
+
+    <script src="{{url_for("static", filename="home-statics/js/index.js")}}"></script>
+  </body>
+</html>

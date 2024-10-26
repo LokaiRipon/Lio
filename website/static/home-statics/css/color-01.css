@@ -1,0 +1,53 @@
+/* 
+the colors are : orangered , aliceblue , alicegreen , deeppink ,
+*/
+
+:root {
+  --skin-color-1: #15b9f0;
+  --skin-color-2: #3276f4;
+  --skin-color-3: rgb(172, 17, 100);
+  --skin-color-4: hotpink;
+  --skin-color-5: orangegreen;
+  --bg-color-1: black;
+  --bg-color-2: beige;
+}
+
+.theme-01 {
+  color: var(--skin-color-1);
+}
+
+.default {
+  color: orangered;
+}
+
+.theme-02 {
+  color: var(--skin-color-2);
+}
+
+.theme-03 {
+  color: var(--skin-color-3);
+}
+
+.theme-04 {
+  color: var(--skin-color-4);
+}
+
+.theme-05 {
+  color: var(--skin-color-5);
+}
+
+.bgBlack {
+  background-color: var(--bg-color-1);
+}
+
+.bgWhite {
+  background-color: var(--bg-color-2);
+}
+
+.bgWhite2 {
+  color: #f3e1e1;
+}
+
+.bgWhite3 {
+  color: #f5f5f5;
+}

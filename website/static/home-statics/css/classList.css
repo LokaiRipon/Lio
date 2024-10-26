@@ -1,0 +1,170 @@
+/* toggle theme color settings container class lists */
+* {
+  transition: all ease 1s;
+}
+:root {
+  --color-02: orangered;
+  --color-04: forestgreen;
+  --color-05: darkmagenta;
+  --color-06: lightblue;
+  --color-07: darkblue;
+  --color-08: darkred;
+  --color-09: darkslategray;
+}
+
+.top-menu-wrapper {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70px;
+  height: 100px;
+  border-radius: 7px;
+}
+
+.top-menu-wrapper i {
+  border-radius: 20px;
+  background-color: var(--color-04);
+  padding: 5px;
+  font-size: 16px;
+  color: aliceblue;
+  box-shadow: 0 0 10px var(--color-02);
+  cursor: pointer;
+}
+
+.top-menu-wrapper .fa-moon {
+  border-radius: 30px;
+  font-size: 14px;
+  width: 23px;
+}
+
+.settings {
+  position: absolute;
+  top: 1rem;
+  right: -9rem;
+  border: 1px solid var(--color-09);
+  padding: 10px 15px;
+  border-radius: 4px;
+  width: 150px;
+  background-color: var(--color-09);
+  display: none;
+}
+
+.settings .theme-colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.settings .theme-colors .cls {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.toggled-top-menu-wrapper {
+  position: absolute;
+  top: 0;
+  right: 10rem;
+  /* 1.5rem */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70px;
+  height: 100px;
+  border-radius: 7px;
+}
+
+.active-top-menu {
+  right: 10rem;
+}
+
+.rotate {
+  animation: rotate 3s infinite ease-in-out;
+}
+
+.fade-in {
+  animation: fadein 3s ease;
+}
+
+.fade-out {
+  animation: fadeout 3s ease;
+}
+
+.slide-left {
+  animation: slideleft 3s ease-in;
+}
+
+.slide-right {
+  animation: slideright 3s ease-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(100);
+  }
+  30% {
+    transform: translateX(50);
+  }
+  70% {
+    transform: translateX(70);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(70);
+  }
+  70% {
+    transform: translateX(50);
+  }
+  100% {
+    transform: translateX(100);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* toggle theme color */
