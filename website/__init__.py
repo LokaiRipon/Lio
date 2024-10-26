@@ -19,7 +19,7 @@ def create_app():
     db.init_app(app)
     login_manager.init_app(app)
     
-    migrate = Migrate(app, db)
+    Migrate(app, db)
     # 
     # registering the blueprints
     from .auth import auth
