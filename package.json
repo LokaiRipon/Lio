@@ -1,6 +1,14 @@
 
-"scripts": {
-  "lint": "eslint .",
-  "build": "tsc",
-  "predeploy": "npm run lint && npm run build"
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc",
+    "predeploy": "npm run lint && npm run build"
+  },
+  "dependencies": {
+    "firebase-functions": "^3.18.0",
+    "firebase-admin": "^9.8.0",
+    "child_process": "^1.0.2"
+  }
 }
